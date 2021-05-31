@@ -1,0 +1,224 @@
+body{
+    font-family: "Arial", sans-serif;
+}
+
+.main-logo {
+    padding-top:300px;
+    display: block;
+    margin: auto;   
+    padding-bottom:50px;
+}
+
+.search-bar-form {
+    display: block;
+    margin: auto;
+    width: fit-content;
+
+    width: inherit;
+    margin: none;
+
+    height: inherit;
+
+}
+
+.search-text{
+    height:auto;
+    border: none;
+    width: 100%;
+
+    font-size:1.2em;
+}
+
+.search-text:focus-visible{
+    outline: none;
+}
+
+.search-bar {
+    
+    margin: auto;
+    width: 600px;
+    border: 0.05em solid #BBB;
+    border-radius: 9999px;
+    height:3em;
+
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+
+}
+
+.search-bar:hover{
+
+    box-shadow: -1px 2px #DADADA;
+
+}
+
+.search-bar:focus{
+
+    box-shadow: -1px 2px #DADADA;
+
+}
+
+.left-box{
+
+    display:flex;
+    width:40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-box{
+    
+    display:flex;
+    width:40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-box{
+
+    display: flex;
+    
+    width:520px;
+    
+}
+
+
+
+
+
+
+/**For my buttons.**/
+
+.buttons-container{
+
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top:40px;
+    width: 420px;
+
+}
+
+
+.leftbutton{
+
+ 
+}
+
+.rightbutton{
+
+    
+
+}
+
+.button{
+
+
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    width:200px;
+
+    background-color:#EEE;
+
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:1.1em;
+
+
+    border-radius:5px;
+    border: 2px solid #EEE;
+
+
+}
+
+.button:hover{
+
+    border-radius:5px;
+    border: 2px solid #CCC;
+
+}
+
+
+/**For my header**/
+
+
+.header{
+
+    display:flex;
+    justify-content:flex-end;
+
+
+}
+
+.header > div{
+
+    display:flex;
+    align-items:center;
+    justify-items:center;
+    padding-left:20px;
+    padding-right:20px;
+
+
+}
+
+.header > div > a{
+
+    color:#000;
+    text-decoration: none;
+
+}
+
+
+.header > div > a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/**Some testing stuff**/
+
+
+.box{
+    color:white;
+    padding:0px;
+    font-size:100px;
+    text-align:center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.three{
+    width:80%;
+}
+
+.two{
+    width:10%;
+}
+
+.four{
+    width:10%;
+}
+
+.flexbox{ /**container**/
+    display:flex;
+    flex-direction:column;
+    border:10px solid goldenrod;
+    height:100vh;
+    box-sizing:border-box;
+    flex-wrap:wrap;
+    justify-content:space-around;
+
+}
+
+.one{background:#f00}
+.two{background:#0f0}
+.three{background:#00f}
+.four{background:#ff0}
+.five{background:#0ff}
+
+
