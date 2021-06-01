@@ -24,9 +24,11 @@ function myFunction() {
 
   window.onclick = function(event){
 
-    if(!document.getElementsByClassName('ninedot')[0].contains(event.target)){ 
+    console.log("x");
+
+    if(!(document.getElementsByClassName('ninedot')[0].contains(event.target)||document.getElementsByClassName('dropdown-content')[0].contains(event.target))){ 
       //The click is not within any dropdown element. Close the box.
-      console.log('yes');
+      console.log(event.target);
       document.getElementById("myDropdown").classList.remove('show');
     }
   }

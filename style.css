@@ -1,15 +1,143 @@
 body{
     font-family: "Arial", sans-serif;
+    margin:15px
 }
 
+
+/**For my header**/
+
+
+.header{
+
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+.header > .links{
+
+    display:flex;
+    align-items:center;
+    justify-items:center;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+.header > .links > img{
+
+    cursor: pointer;
+
+}
+
+.header > .links > a{
+
+    color:#000;
+    text-decoration: none;
+
+}
+
+
+.header > .links > a:hover{
+
+    text-decoration:underline;
+
+}
+
+.header > .ninedot{
+
+    position:relative;
+    display:inline-block;
+
+    border-radius: 9999px;
+    text-align: center;
+
+    width:50px;
+    height:50px;
+
+    margin-right:0px;
+
+    cursor: pointer;
+
+}
+
+.ninedot > img{
+    
+    margin-top:15px;
+    color:rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+    border: none;
+
+}
+
+.dropdown-content{
+
+    display:none;
+    position:fixed;
+    /**margin-top:15px;**/
+    top:65px;
+    right:15px;
+
+    border-radius: 10px;
+    background-color:#FFF;
+    width:300px;
+    height:500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content > div{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    box-sizing:border-box;
+    width:130px;
+    height:130px;
+    padding:20px;
+    margin:10px;
+
+    cursor: pointer;
+
+    border-radius:10px;
+
+}
+
+.dropdown-content > div:hover{
+
+    background-color:#bad5e6;
+
+}
+
+.ninedot:hover {
+    background-color: #BBB;
+}
+
+.show {
+
+    display:flex;
+    padding:10px;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/**Main content**/
+
 .main-logo {
-    padding-top:300px;
+    padding-top:200px;
     display: block;
     margin: auto;   
     padding-bottom:50px;
 }
 
 .search-bar-form {
+    
     display: block;
     margin: auto;
     width: fit-content;
@@ -90,7 +218,7 @@ body{
 
 
 
-/**For my buttons.**/
+/**For search buttons.**/
 
 .buttons-container{
 
@@ -102,18 +230,6 @@ body{
 
 }
 
-
-.leftbutton{
-
- 
-}
-
-.rightbutton{
-
-    
-
-}
-
 .button{
 
 
@@ -122,7 +238,8 @@ body{
     align-items: center;
     width:200px;
 
-    background-color:#EEE;
+    background-color:#F3F3F3;
+    color: #333;
 
     padding-top:10px;
     padding-bottom:10px;
@@ -132,96 +249,16 @@ body{
     border-radius:5px;
     border: 2px solid #EEE;
 
-
 }
 
 .button:hover{
 
     border-radius:5px;
-    border: 2px solid #CCC;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
 
 }
 
 
-/**For my header**/
-
-
-.header{
-
-    display:flex;
-    justify-content:flex-end;
-
-}
-
-.header > .links{
-
-    display:flex;
-    align-items:center;
-    justify-items:center;
-    padding-left:20px;
-    padding-right:20px;
-
-
-}
-
-.header > .links > a{
-
-    color:#000;
-    text-decoration: none;
-
-}
-
-
-.header > .links > a:hover{
-
-    text-decoration:underline;
-
-}
-
-.header > .ninedot{
-
-    position:relative;
-    display:inline-block;
-
-    border-radius: 9999px;
-    text-align: center;
-
-    width:50px;
-    height:50px;
-
-    margin-right:20px;
-
-}
-
-.ninedot > img{
-    margin-top:15px;
-    color:rgba(0,0,0,0);
-    background-color:rgba(0,0,0,0);
-    border: none;
-
-}
-
-.dropdown-content{
-
-    display:none;
-    position:absolute;
-    margin-top:15px;
-    left:-250px;
-    background-color:#F5F5F5;
-    min-width:300px;
-    min-height:400px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-}
-
-.ninedot:hover {
-    background-color: #BBB;
-}
-
-.show {
-    display:block;
-}
 
 /**Create a footer**/
 
@@ -231,7 +268,7 @@ body{
     bottom:0;
 
     display:flex;
-    background-color:#CCC;
+    background-color:#EEE;
 
     height:50px;
 
@@ -241,7 +278,7 @@ body{
 
 .leftfooter{
     
-    width:50%;
+    width:70%;
     display:flex;
     justify-content:flex-start;
 
@@ -249,7 +286,7 @@ body{
 
 .rightfooter{
 
-    width:50%;
+    width:30%;
     display:flex;
     justify-content:flex-end;
 
@@ -257,7 +294,7 @@ body{
 
 
 
-.footer > .links{
+.footer > div > .links{
 
     display:flex;
     align-items:center;
@@ -268,15 +305,16 @@ body{
 
 }
 
-.footer > .links > a{
+.footer > div > .links > a{
 
-    color:#000;
+    color:#555;
+    font-size:0.9em;
     text-decoration: none;
 
 }
 
 
-.footer > .links > a:hover{
+.footer > div > .links > a:hover{
 
     text-decoration:underline;
 
