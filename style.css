@@ -151,7 +151,6 @@ body{
     display:flex;
     justify-content:flex-end;
 
-
 }
 
 .header > .links{
@@ -223,6 +222,84 @@ body{
 .show {
     display:block;
 }
+
+/**Create a footer**/
+
+.footer { 
+    position:fixed;
+    left:0;
+    bottom:0;
+
+    display:flex;
+    background-color:#CCC;
+
+    height:50px;
+
+    width:100%;
+
+}
+
+.leftfooter{
+    
+    width:50%;
+    display:flex;
+    justify-content:flex-start;
+
+}
+
+.rightfooter{
+
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+
+
+.footer > .links{
+
+    display:flex;
+    align-items:center;
+    justify-items:center;
+    padding-left:20px;
+    padding-right:20px;
+
+
+}
+
+.footer > .links > a{
+
+    color:#000;
+    text-decoration: none;
+
+}
+
+
+.footer > .links > a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
