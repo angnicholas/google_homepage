@@ -1,2 +1,3 @@
-Yes this is very good
-# google_homepage
+# Google Homepage
+
+Assignment for the odin project
